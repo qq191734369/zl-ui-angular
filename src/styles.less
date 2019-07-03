@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./app/style/reset.less";
+@import "./app/style/z-index.less";
+@import "./app/style/color.less";
+@import "./app/style/common.less";
+
+.zl-mask {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: @z-1999;
+    background-color: rgba(0, 0, 0, .3);
+    transform: translate3d(0px,0px,0px);
+    padding: 15px;
+}
+.zl-dialog {
+    position: relative;
+    max-width: 400px;
+    margin: 15vh auto 15vh;
+    padding: 15px;
+    background-color: @white;
+    z-index: @z-2000;
+    border-radius: @radus6;
+}
+.show {
+    opacity: 1;
+    visibility: visible;
+}

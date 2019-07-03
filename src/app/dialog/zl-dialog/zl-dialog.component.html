@@ -1,0 +1,9 @@
+<zl-mask [show]="show" (click)="handleMaskClick()">
+    <div 
+        class="zl-dialog" 
+        (click)="$event.stopPropagation()"
+        [@dialogFadeAnimation]="show"
+        >
+        <ng-content></ng-content>
+    </div>
+</zl-mask>
