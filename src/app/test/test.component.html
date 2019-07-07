@@ -1,7 +1,16 @@
 <p>mask</p>
-<button (click)="dialogShow=true">打开dialog</button>
+<zl-btn (click)="dialogShow=true">打开dialog</zl-btn>
 <div>
   <zl-dialog [(show)]="dialogShow">
       <div>1111111111111111111111111111111</div>
   </zl-dialog>
 </div>
+
+<p>toast</p>
+<zl-btn [type]="'error'" (click)="toastShow=true">打开toast</zl-btn>
+<div>
+  <zl-toast [(show)]="toastShow" [text]="'请求成功：success。。。。。。。。。。。。'"></zl-toast>
+</div>
+
+<p>分页</p>
+<zl-pagenation [(page)]="page" [total]="50" (onPageChange)="pageChange($event)"></zl-pagenation>

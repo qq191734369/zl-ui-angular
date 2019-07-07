@@ -2,8 +2,18 @@
 @import "./app/style/reset.less";
 @import "./app/style/z-index.less";
 @import "./app/style/color.less";
+@import "./app/style/font-size.less";
 @import "./app/style/common.less";
-
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: @font-14;
+}
+// mask
 .zl-mask {
     position: fixed;
     top: 0;
@@ -13,16 +23,83 @@
     z-index: @z-1999;
     background-color: rgba(0, 0, 0, .3);
     transform: translate3d(0px,0px,0px);
-    padding: 15px;
+    padding: 1.5rem;
 }
 .zl-dialog {
     position: relative;
-    max-width: 400px;
+    max-width: 40rem;
     margin: 15vh auto 15vh;
-    padding: 15px;
+    padding: 1.5rem;
     background-color: @white;
     z-index: @z-2000;
     border-radius: @radus6;
+}
+// toast
+.zl-toast-container {
+    position: fixed;
+    text-align: center;
+    bottom: 15vh;
+    left: 0;
+    right: 0;
+    padding: 0 1.5rem;
+}
+.zl-toast {
+    position: relative;
+    display: inline-block;
+    z-index: @z-1999;
+    min-width: 10rem;
+    max-width: 20rem;
+    word-break: break-all;
+    padding: 1rem 1.5rem;
+    background-color: @black;
+    color: @white;
+    border-radius: @radus6;
+    .shadow()
+}
+// button
+.zl-btn {
+    padding: .8rem 1rem;
+    color: @base;
+    border: 1px solid @base;
+    border-radius: @radus6;
+}
+.zl-btn:focus {
+    outline: none;
+}
+.zl-btn:hover {
+    opacity: .8;
+    background-color: @base-l;
+}
+.zl-btn:active {
+    opacity: 1;
+}
+.zl-btn--error {
+    color: @error;
+    border: 1px solid @error;
+    border-radius: @radus6;
+}
+// pagenation
+.page-btn {
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px;
+    color: @black;
+}
+.page-btn.active {
+    color: @base;
+}
+.page-btn.active:hover {
+    color: @dark-blue;
+}
+.pre-btn, .next-btn {
+    color: @base;
+}
+.pre-btn:hover, .next-btn:hover {
+    color: @dark-blue;
+}
+// commen
+.active {
+    color: @base;
 }
 .show {
     opacity: 1;

@@ -1,0 +1,6 @@
+<div class="zl-toast-container" *ngIf="show" [@maskFadeAnimation]="show">
+  <div class="zl-toast">
+    {{text}}
+    <ng-content></ng-content>
+  </div>
+</div>

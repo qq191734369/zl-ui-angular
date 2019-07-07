@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { LayerModule } from './layer/layer.module';
 import { TestComponent } from './test/test.component';
 import { DialogModule } from './dialog/dialog.module';
+import { ToastModule } from './toast/toast.module';
+import { ButtonModule } from './button/button.module';
+import { PagenationModule } from './pagenation/pagenation.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { DialogModule } from './dialog/dialog.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     LayerModule,
-    DialogModule
+    DialogModule,
+    ToastModule,
+    ButtonModule,
+    PagenationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

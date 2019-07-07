@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./test.component.less']
 })
 export class TestComponent implements OnInit {
-  dialogShow: boolean = true
+  dialogShow: boolean = false
+
+  toastShow: boolean = false
+
+  page: number = 1
+
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  pageChange(index) {
+    console.log(index)
+  }
 }

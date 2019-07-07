@@ -1,0 +1,9 @@
+<div class="zl-pagenation">
+  <div class="page-btn pre-btn" (click)="handlePre()">上一页</div>
+  <div class="page-btn" [class.active]="page===1" (click)="handlePageClick(1)">1</div>
+  <div class="page-btn" *ngIf="preMore">...</div>
+  <div class="page-btn" [class.active]="page===current" *ngFor="let current of pageArr" (click)="handlePageClick(current)">{{current}}</div>
+  <div class="page-btn" *ngIf="nextMore">...</div>
+  <div class="page-btn" *ngIf="pageNum>1" [class.active]="page===pageNum+1" (click)="handlePageClick(pageNum+1)">{{pageNum+1}}</div>
+  <div class="page-btn next-btn" (click)="handleNext()">下一页</div>
+</div>

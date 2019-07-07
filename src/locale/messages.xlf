@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="f85a43d0bfdae0408649f7c3113f0fddb3d533a8" datatype="html">
+        <source>国际化是一个设计和准备应用程序的过程，使其能用于不同的语言。 本地化是一个把国际化的应用针对部分区域翻译成特定语言的过程。
+
+    Angular 简化了国际化工作的下列几个方面：
+    
+    用本地格式显示日期、数字、百分比以及货币。
+    
+    准备组件模板中待翻译的文本。
+    
+    处理单词的复数形式。
+    
+    处理候选文本。
+    
+    为了进行本地化，你可以使用 Angular CLI 来生成大部分必要的代码，用与创建要发给翻译人员的文件以及把应用发布成多种语言。 如果要为你的应用添加 i18n 支持，CLI 会在下列步骤中给你提供帮助：
+    
+    把本地化文本提取到一个文件中，你可以把它发给别人进行翻译。
+    
+    使用翻译好的文本，为指定的区域构建应用和启动开发服务器。
+    
+    为你的应用创建多语言版本</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/toast/zl-toast/zl-toast.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -38,3 +38,12 @@ export const maskFadeAnimation: AnimationTriggerMetadata = trigger(
     transition('* <=> *', animate(`250ms ease-in-out`)),
   ]
 )
+
+export const toastAnimation : AnimationTriggerMetadata = trigger(
+  'toastAnimation', [
+    state('*', style({
+      transform: 'translate3D(0, 15px, 0)'
+    })),
+    
+  ]
+)
